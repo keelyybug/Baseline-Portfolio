@@ -1,0 +1,249 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--tertiary);
+    padding-bottom: 15px;
+    color: var(--secondary);
+    font-size: 15px;
+}
+
+h1 {
+    color: var(--tertiary); 
+    background-color: var(--secondary);
+    width: 320px;
+    height: 50px;
+    padding-left: 50px;
+    margin-top: 15px;
+    font-size: 35px;
+}
+/*--------------nav bar----------------*/
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    min-width: 300px;
+    padding-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--tertiary);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--secondary);
+}
+
+li a {
+    font-size: medium;
+    color: var(--secondary);
+    padding: 15px;
+    text-decoration: none;
+}
+/*---------------cover image---------------*/
+.hero-image {
+    width: auto;
+    height: 250px;
+    background-image: url(./images/02-hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: darkslateblue;
+    background-blend-mode: overlay;
+}
+
+#hero-text {
+    position: absolute; 
+    right: 100px;
+    top: 250px;
+    font-size: x-large;
+}
+
+h2{
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 10px;
+    display: block;
+    width: 250px;
+}
+/*------------about me-------------*/
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about p {
+    margin: auto;
+    max-width: 1130px;
+}
+
+#about {
+    padding-bottom: 100px;
+    padding-top: 90px;
+}
+
+section.about{
+    display: flex;
+}
+section.section2 {
+    display:flex;
+    margin: 25px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+/*--------------work section---------------*/
+#work{
+    flex: 0 0 20%;
+    border-right: 4px solid var(--tertiary);
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 0 0 80%;
+}
+
+figure {
+    display: flex;
+    border: 5px solid var(--secondary);
+    align-items:flex-end;
+    margin: .5em;
+    padding: 0 0 20px 0;
+}
+
+.surfimg {
+    background-image: url(./images/02-portfolio-4.jpg);
+    flex-basis: 100%;
+    min-height: 400px;
+    background-size: cover;
+    max-width: 905px;
+}
+
+.wallimg {
+    background-image: url(./images/02-portfolio-1.jpg);
+    background-size: cover;
+    flex-basis: calc(40%);
+    min-height:150px;
+}
+
+.calculatorimg {
+    background-image: url(./images/02-portfolio-2.jpg);
+    background-size: cover;
+    flex-basis: calc(40%);
+    min-height:150px;
+}   
+
+.puzzleimg {
+    background-image: url(./images/02-portfolio-3.jpg);
+    background-size: cover;
+    flex-basis: calc(40%);
+    min-height:150px;
+}
+
+.runimg {
+    background-image: url(./images/02-run-buddy.jpg);
+    background-size: cover;
+    flex-basis: calc(40%);
+    min-height:150px;
+}
+
+h4 {
+    font-size: xx-large;
+}
+
+h5 {
+    font-size: small;
+    margin-bottom: 2.5%;
+}
+
+h4.surftext,
+h5.surftext,
+h4.walltext,
+h5.walltext,
+h4.calctext,
+h5.calctext,
+h4.puzzletext,
+h5.puzzletext,
+h4.runtext,
+h5.runtext {
+    color: var(--dark);
+    background-color: var(--secondary);
+    border: 3px solid var(--secondary);
+    margin-top: -20px;
+} 
+
+figure.surfimg:hover,
+figure.wallimg:hover,
+figure.calculatorimg:hover,
+figure.puzzleimg:hover,
+figure.runimg:hover {
+    cursor:pointer;
+    background-blend-mode:normal;
+}
+
+figure.surfimg,
+figure.wallimg,
+figure.calculatorimg,
+figure.puzzleimg,
+figure.runimg {
+    background-color: var(--tertiary);
+    background-blend-mode: overlay;
+}
+
+/*--------------footer----------------*/
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    background-color: var(--light);
+    padding: 15px;
+}
+
+h3{
+    border-right: 6px;
+    border-color: var(--primary);
+    margin:20px;
+    font-size: xx-large;
+}
+
+ul.display {
+    display:flex;
+}
+
+.display a {
+    color: var(--primary);
+    display: inline-flex;
+    text-decoration: none;
+    background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    margin: 25px;
+}
+
+@media screen and (min-width: 389px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 920px) {
+
+}
+
+@media screen and (min-width: 1280px) {
+
+}
